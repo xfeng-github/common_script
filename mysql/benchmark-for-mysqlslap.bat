@@ -56,6 +56,6 @@ rem --detach 在X次请求后分离(关闭并重新打开)连接。
 set DETACH=100
 
 echo benchmark exec running info --create-schema=%DB% --engine=%ENGINES% --concurrency=%CONCURRENCY% --iterations=%ITERATIONS% --number-of-queries=%NUMBER_OF_QUERIES% --auto-generate-sql-load-type=%AUTO_GENERATE_SQL_LOAD_TYPE% --number-int-cols=%NUMBER_INT_COLS% --number-char-cols=%NUMBER_CHAR_COLS% --commit=%COMMIT% --detach=%DETACH%
-mysqlslap -h%HOST% -P%PORT% -u%USER_NAME% -p%PASS_WORD% --create-schema=%DB% --engine=%ENGINES% --concurrency=%CONCURRENCY% --iterations=%ITERATIONS% --number-of-queries=%NUMBER_OF_QUERIES% --auto-generate-sql-load-type=%AUTO_GENERATE_SQL_LOAD_TYPE% --number-int-cols=%NUMBER_INT_COLS% --number-char-cols=%NUMBER_CHAR_COLS% --auto-generate-sql --auto-generate-sql-add-autoincrement --commit=%COMMIT% --detach=%DETACH%
+mysqlslap -h%HOST% -P%PORT% -u%USER_NAME% -p%PASS_WORD% --create-schema=%DB% --engine=%ENGINES% --concurrency=%CONCURRENCY% --iterations=%ITERATIONS% --number-of-queries=%NUMBER_OF_QUERIES% --auto-generate-sql-load-type=%AUTO_GENERATE_SQL_LOAD_TYPE% --number-int-cols=%NUMBER_INT_COLS% --number-char-cols=%NUMBER_CHAR_COLS% --commit=%COMMIT% --detach=%DETACH% --auto-generate-sql --auto-generate-sql-add-autoincrement
 
 pause
